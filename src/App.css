@@ -1,38 +1,237 @@
-.App {
+:root {
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+}
+
+body {
+  direction: rtl;
+}
+.section-one p {
+  color: #bd944f;
+  font-weight: bold;
+}
+.section-one {
+  background: linear-gradient(to bottom, transparent, 85%, var(--white)), url("./public/Layer2.png");
+  position: relative;
+  background-position: left;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+.p-tag {
+  font-size: 3.125rem;
   text-align: center;
+  margin: 6rem 6rem 3rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-tag-second {
+  font-size: 3.125rem;
+  text-align: center;
+  margin: 3rem 3rem 4rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-one {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: .5rem;
+  width: 32rem;
+  /* height: 18rem; */
+  background-color: var(--white);
+  margin-top: 4rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-one-holder {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  margin-bottom: 4rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-p {
+  font-size: 2rem;
+  margin: .5rem 1rem;
+}
+.card-p-second {
+  font-size: 2rem;
+  margin: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.card-link {
+  align-self: flex-end;
+  font-size: 1.75rem;
+  color: var(--black);
+  background-color: transparent;
+}
+a:hover {
+  /* font-weight: bold; */
+  text-decoration: underline;
+}
+.card-img {
+  height: 22rem;
+}
+.card-two {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0.5rem;
+  width: 24rem;
+  /* height: 18rem; */
+  background-color: var(--white);
+  margin-top: 4rem;
+}
+.card-link-two {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.75rem;
+  color: var(--black);
+  background-color: transparent;
+}
+.promo-holder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.group-img {
+  width: 40%;
+  align-self: center;
+}
+.section-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards-section-two {
+  display: flex;
+  flex-direction: column;
+}
+.cards-order {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.sec-two-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+.img-card-two {
+  width: 32rem;
+  height: 29rem;
+}
+.sec-two-card .card-link {
+  margin: .75rem 0 1.5rem;
+}
+.footer-base {
+  font-size: 1.875rem;
+  text-align: center;
+  margin: 8rem 0 2rem;
+}
+.cards-section-two::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 330%;
+  width: 12rem;
+  height: 62rem;
+  background: url("./public/sideVector.png");
+}
+.nav-sec-img {
+  width: 54rem;
+  height: 26rem;
+  align-self: center;
+}
+.interactive-nav {
+  margin-bottom: 35rem;
+}
+.nav-second {
+  margin-top: 8rem;
+}
+.nav-third-img-two {
+  width: 16rem;
+  height: 24rem;
+}
+.nav-third-img-one {
+  width: 16rem;
+  height: 13.5rem;
+}
+.nav-first-img-one {
+  width: 17rem;
+  height: 17.5rem;
+}
+.nav-first-img-two {
+  width: 17.125rem;
+  height: 28rem;
+}
+/* .nav-first {
+  display: flex;
+  flex-direction: column;
+} */
+.nav-first::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  top: 5rem;
+  width: 15.25rem;
+  height: 16.5rem;
+  background: url("./public/BackgroundCopyLeft.png");
+}
+.nav-first::after {
+  content: "";
+  position: absolute;
+  left: 6rem;
+  background-repeat: no-repeat;
+  top: 7rem;
+  width: 22rem;
+  height: 35rem;
+  background: url("./public/BackgroundLeft.png");
+}
+/* .nav-third {
+  display: flex;
+  flex-direction: column;
+} */
+.nav-third::before {
+  content: "";
+  position: absolute;
+  right: 8rem;
+  background-repeat: no-repeat;
+  top: 2rem;
+  width: 18rem;
+  height: 16rem;
+  background: url("./public/BackgroundCopyRight.png");
+}
+.nav-third::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-repeat: no-repeat;
+  top: 17rem;
+  width: 19rem;
+  height: 30rem;
+  background: url("./public/BackgroundRight.png");
+}
+.nav-second::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-repeat: no-repeat;
+  top: 0;
+  width: 28rem;
+  height: 37rem;
+  background: url("./public/vectirMine.png");
+}
+.nav-second::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 8rem;
+  left: 50%;
+  width: 58rem;
+  margin-left: -28rem;
+  height: 30rem;
+  background: url("./public/vector.png");
 }
