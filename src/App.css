@@ -68,8 +68,8 @@ a {
   background-color: transparent;
 }
 a:hover {
-  /* font-weight: bold; */
-  text-decoration: underline;
+  font-weight: bold;
+  /* text-decoration: underline; */
 }
 .card-img {
   height: 22rem;
@@ -96,7 +96,8 @@ a:hover {
   flex-direction: column;
 }
 .group-img {
-  width: 40%;
+  width: 38.625rem;
+  height: 20.875rem;
   align-self: center;
 }
 .section-two {
@@ -174,7 +175,6 @@ a:hover {
   content: "";
   position: absolute;
   left: 0;
-  background-repeat: no-repeat;
   top: 5rem;
   width: 15.25rem;
   height: 16.5rem;
@@ -183,8 +183,7 @@ a:hover {
 .nav-first::after {
   content: "";
   position: absolute;
-  left: 6rem;
-  background-repeat: no-repeat;
+  right: 71%;
   top: 7rem;
   width: 22rem;
   height: 35rem;
@@ -198,7 +197,6 @@ a:hover {
   content: "";
   position: absolute;
   right: 8rem;
-  background-repeat: no-repeat;
   top: 2rem;
   width: 18rem;
   height: 16rem;
@@ -208,7 +206,6 @@ a:hover {
   content: "";
   position: absolute;
   right: 0;
-  background-repeat: no-repeat;
   top: 17rem;
   width: 19rem;
   height: 30rem;
@@ -218,7 +215,6 @@ a:hover {
   content: "";
   position: absolute;
   right: 0;
-  background-repeat: no-repeat;
   top: 0;
   width: 28rem;
   height: 37rem;
@@ -227,11 +223,55 @@ a:hover {
 .nav-second::after {
   content: "";
   position: absolute;
-  background-repeat: no-repeat;
   top: 8rem;
   left: 50%;
   width: 58rem;
   margin-left: -28rem;
   height: 30rem;
   background: url("./public/vector.png");
+}
+/* @media screen and (max-width: 1445px) {
+  .nav-first::after {
+    left: 0;
+    top: 7rem;
+  }
+} */
+@media screen and (max-width: 1265px) {
+  .nav-first::after {
+    display: none;
+  }
+  .nav-third::after {
+    top: 22rem;
+  }
+  .nav-third::before {
+    top: 1rem;
+  }
+}
+@media screen and (max-width: 1458px) {
+  .cards-section-two::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1048px) {
+  .cards {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .card-link {
+    align-self: center;
+  }
+  .card-one {
+    align-self: center;
+  }
+  .card-two {
+    align-self: center;
+  }
+  .card-two-holder {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-link-two {
+    align-self: center;
+  }
 }

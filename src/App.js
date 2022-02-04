@@ -6,11 +6,7 @@ import bathspa from "./public/bathspa.jpg";
 import bodyspa from "./public/bodyspa.jpg";
 import handsspa from "./public/handsspa.jpg";
 import peelingspa from "./public/peelingspa.jpg";
-import vector from "./public/vector.png";
-import bacleft from "./public/BackgroundLeft.png";
-import bacleftc from "./public/BackgroundCopyLeft.png";
-import bacright from "./public/BackgroundRight.png";
-import bacrightc from "./public/BackgroundCopyRight.png";
+
 
 function App() {
   return (
