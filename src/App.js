@@ -6,6 +6,10 @@ import bathspa from "./public/bathspa.jpg";
 import bodyspa from "./public/bodyspa.jpg";
 import handsspa from "./public/handsspa.jpg";
 import peelingspa from "./public/peelingspa.jpg";
+import peelingbox from "./public/peelingbox.png";
+import handsbox from "./public/handsbox.png";
+import bodybox from "./public/bodybox.png";
+import bathbox from "./public/bathbox.png";
 
 
 function App() {
@@ -13,18 +17,9 @@ function App() {
     <div className="holder">
       <section className="section-one">
         <div className="interactive-nav">
-        <div className="nav-second">
-            {/* <img src={vector} className="nav-sec-img"/> */}
-          </div>
-          <div className="nav-first">
-            {/* <img src={bacrightc} className="nav-third-img-one"/>
-            <img src={bacright} className="nav-third-img-two"/> */}
-          </div>
-          
-          <div className="nav-third">
-            {/* <img src={bacleftc} className="nav-first-img-one"/>
-            <img src={bacleft} className="nav-first-img-two"/> */}
-          </div>
+          <div className="nav-second"/>
+          <div className="nav-first"/>
+          <div className="nav-third"/>
         </div>
         <p className="p-tag">
                   ג'יימס ריצ'רדסון דיוטי פרי מזמינה אתכם 
@@ -70,19 +65,23 @@ function App() {
           <div className="cards-order">
             <div className="sec-two-card">
             <img src={bodyspa} alt="" className="img-card-two"/>
+            <img src={bodybox} alt="" className="img-card-three"/>
             <a href="https://www.dutyfree.co.il/jr_spa/body" alt="" className="card-link" target="_blank">לכל המוצרים {'>>'}</a>
           </div>
           <div className="sec-two-card">
             <img src={bathspa} alt="" className="img-card-two"/>
+            <img src={peelingbox} alt="" className="img-card-three"/>
             <a href="https://www.dutyfree.co.il/jr_spa/bath" alt="" className="card-link" target="_blank">לכל המוצרים {'>>'}</a>
           </div>
           </div>
           <div className="cards-order">
           <div className="sec-two-card">
             <img src={peelingspa} alt="" className="img-card-two"/>
+            <img src={bathbox} alt="" className="img-card-three"/>
             <a href="https://www.dutyfree.co.il/jr_spa/peeling" alt="" className="card-link" target="_blank">לכל המוצרים {'>>'}</a>
           </div>
           <div className="sec-two-card">
+            <img src={handsbox} alt="" className="img-card-three"/>
             <img src={handsspa} alt="" className="img-card-two"/>
             <a href="https://www.dutyfree.co.il/jr_spa/hands" alt="" className="card-link" target="_blank">לכל המוצרים {'>>'}</a>
           </div>

@@ -42,7 +42,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 2rem;
+  margin: 1rem;
+}
+.card-two-holder {
+  margin: 1rem;
 }
 .cards {
   display: flex;
@@ -52,7 +55,7 @@ body {
 }
 .card-p {
   font-size: 2rem;
-  margin: .5rem 1rem;
+  margin: 1rem;
 }
 .card-p-second {
   font-size: 2rem;
@@ -96,9 +99,10 @@ a:hover {
   flex-direction: column;
 }
 .group-img {
-  width: 38.625rem;
-  height: 20.875rem;
+  /* width: 38.625rem;
+  height: 20.875rem; */
   align-self: center;
+  width: 40%;
 }
 .section-two {
   display: flex;
@@ -129,7 +133,7 @@ a:hover {
 .footer-base {
   font-size: 1.875rem;
   text-align: center;
-  margin: 8rem 0 2rem;
+  margin: 8rem 2rem 2rem;
 }
 .cards-section-two::before {
   content: "";
@@ -236,6 +240,9 @@ a:hover {
     top: 7rem;
   }
 } */
+.img-card-three {
+  display: none;
+}
 @media screen and (max-width: 1265px) {
   .nav-first::after {
     display: none;
@@ -245,6 +252,7 @@ a:hover {
   }
   .nav-third::before {
     top: 1rem;
+    right: 1rem;
   }
 }
 @media screen and (max-width: 1458px) {
@@ -260,6 +268,7 @@ a:hover {
   }
   .card-link {
     align-self: center;
+    margin-right: 18rem;
   }
   .card-one {
     align-self: center;
@@ -273,5 +282,155 @@ a:hover {
   }
   .card-link-two {
     align-self: center;
+    margin-right: 10rem;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .cards-order {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav-second::after {
+    top: 4rem;
+    width: 24rem;
+    margin-left: -12rem;
+    height: 14rem;
+    background: url("./public/vectorSmall.png");
+  }
+  .nav-second::before {
+    right: 0;
+    top: 0;
+    width: 6rem;
+    height: 15.35rem;
+    background: url("./public/vectorObjectSmall.png");
+  }
+  .nav-third::before {
+    right: 8rem;
+    top: 2rem;
+    width: 6rem;
+    height: 5rem;
+    background: url("./public/smallCopyRight.png");
+  }
+  .nav-third::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 8rem;
+    width: 5rem;
+    height: 9rem;
+    background: url("./public/smallRight.png");
+  }
+  .nav-first::before {
+    content: "";
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    width: 6.25rem;
+    height: 5.35rem;
+    background: url("./public/smallLeft.png");
+  }
+  .nav-first::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 1rem;
+    top: 8rem;
+    width: 7rem;
+    height: 10.75rem;
+    background: url("./public/smallCopyLeft.png");
+  }
+  .interactive-nav {
+    margin-bottom: 10rem;
+  }
+  .p-tag-second {
+    font-size: 1.438rem;
+    margin: 3rem 1rem;
+  }
+  .p-tag {
+    font-size: 1.813rem;
+    margin: 6rem 1rem 0;
+  }
+  .card-p-second {
+    font-size: 1.813rem;
+  }
+  .card-p {
+    font-size: 1.813rem;
+  }
+  .card-two {
+    margin-top: 0;
+  }
+  .group-img {
+    margin-top: 3rem;
+    width: 70vw;
+  }
+  .footer-base {
+    margin: 8rem 1rem 2rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  .img-card-two {
+    display: none;
+  }
+  .img-card-three {
+    display: block;
+  }
+  .cards-order {
+    flex-direction: row;
+  }
+  .card-two {
+    width: 22rem;
+  }
+  .card-one {
+    width: 22rem;
+  }
+  .card-p {
+    font-size: 1.563rem;
+  }
+  .card-p-second {
+    font-size: 1.563rem;
+  }
+  .card-img {
+    height: 13rem;
+    width: 10rem;
+  }
+  .card-link {
+    margin-right: 12rem;
+    font-size: 1.125rem;
+  }
+  .card-link-two {
+    margin-right: 12rem;
+    font-size: 1.125rem;
+  }
+  .group-img {
+    width: 23rem;
+  }
+  .footer-base {
+    font-size: 0.938rem;
+    margin-top: 5rem;
+  }
+  .promo-holder .p-tag {
+    margin-top: 3rem;
+  }
+  .nav-third::before {
+    right: 2rem;
+    top: 2rem;
+  }
+  .nav-third::after {
+    right: 0;
+    top: 13rem;
+  }
+  .nav-first::after {
+    content: "";
+    position: absolute;
+    display: block;
+    right: 50%;
+    top: 10rem;
+    width: 7rem;
+    margin-right: -3.5rem;
+  }
+  .section-one {
+    margin-bottom: 6rem;
   }
 }
