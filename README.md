@@ -1,3 +1,7 @@
+# Responsive Landing page with React
+
+![This is an image](https://pbs.twimg.com/media/FK3OtNTXwAgRi68?format=jpg&name=4096x4096)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
