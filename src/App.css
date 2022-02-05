@@ -34,7 +34,6 @@ body {
   flex-direction: row-reverse;
   padding: .5rem;
   width: 32rem;
-  /* height: 18rem; */
   background-color: var(--white);
   margin-top: 4rem;
 }
@@ -72,7 +71,6 @@ a {
 }
 a:hover {
   font-weight: bold;
-  /* text-decoration: underline; */
 }
 .card-img {
   height: 22rem;
@@ -82,7 +80,6 @@ a:hover {
   flex-direction: column-reverse;
   padding: 0.5rem;
   width: 24rem;
-  /* height: 18rem; */
   background-color: var(--white);
   margin-top: 4rem;
 }
@@ -99,8 +96,6 @@ a:hover {
   flex-direction: column;
 }
 .group-img {
-  /* width: 38.625rem;
-  height: 20.875rem; */
   align-self: center;
   width: 40%;
 }
@@ -171,10 +166,6 @@ a:hover {
   width: 17.125rem;
   height: 28rem;
 }
-/* .nav-first {
-  display: flex;
-  flex-direction: column;
-} */
 .nav-first::before {
   content: "";
   position: absolute;
@@ -193,10 +184,6 @@ a:hover {
   height: 35rem;
   background: url("./public/BackgroundLeft.png");
 }
-/* .nav-third {
-  display: flex;
-  flex-direction: column;
-} */
 .nav-third::before {
   content: "";
   position: absolute;
@@ -234,12 +221,6 @@ a:hover {
   height: 30rem;
   background: url("./public/vector.png");
 }
-/* @media screen and (max-width: 1445px) {
-  .nav-first::after {
-    left: 0;
-    top: 7rem;
-  }
-} */
 .img-card-three {
   display: none;
 }
