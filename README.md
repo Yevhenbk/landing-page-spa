@@ -1,6 +1,6 @@
 # Responsive Landing page with React
 
-A simple responsive LP made for [Cognitive Spark](https://cgspark.com/) application.
+LP made for [Cognitive Spark](https://cgspark.com/) application.
 
 ![This is an image](https://pbs.twimg.com/media/FK3OtNTXwAgRi68?format=jpg&name=4096x4096)
 
